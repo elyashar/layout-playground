@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: brown;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main {
+    width: 80%;
+    /* Traditional approach to center the element */
+    margin: 0 auto;
+    /* TODO: Find another way of centering when using flexbox */
+    padding: 1rem;
+    background-color: sandybrown;
+    height: 100vh;
+}
+
+footer {
+    background-color: green;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}

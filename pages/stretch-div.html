@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/stretch-div.css" />
-  </head>
 
-  <body>
-    <div class="container">
-      <main>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-        </ul>
-        <h1>Stretch div</h1>
-        <p>
-          First real-world CSS problems we should be able to solve, is to render
-          any element at full height, regardless of its content; sometimes the
-          content is not enough, but we want that the background of the element
-          stretches out the full height of the page.
-        </p>
-      </main>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet"
+        href="../styles/stretch-div.css" />
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><button id="btn-add-filler-text">Add filler text</button></li>
+        <li><button id="btn-remove-filler-text">Reset filler text</button></li>
+      </ul>
+      <h1>Stretch div</h1>
+      <p id="filler-text">
+        First real-world CSS problems we should be able to solve, is to render
+        any element at full height, regardless of its content; sometimes the
+        content is not enough, but we want that the background of the element
+        stretches out the full height of the page.
+      </p>
+    </main>
+  </div>
+  <script src="../scripts/stretch-div.js"></script>
+</body>
+
 </html>

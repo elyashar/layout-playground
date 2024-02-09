@@ -5,25 +5,28 @@
 
 .container {
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
     background-color: brown;
-    flex-direction: column;
-    height: 100vh;
 }
 
 main {
+    flex: 1;
     width: 80%;
-    /* Traditional approach to center the element */
-    margin: 0 auto;
+    /* Traditional approach to center horizontally the element */
+    /* margin: 0 auto; */
     /* TODO: Find another way of centering when using flexbox */
+    align-self: center;
     padding: 1rem;
     background-color: sandybrown;
-    height: 100vh;
 }
 
 footer {
     background-color: green;
     padding: 1rem;
     width: 80%;
-    margin: 0 auto;
+    /* Traditional way. */
+    /* margin: 0 auto; */
+    /* Fuck traditions, let's go flexbox */
+    align-self: center;
 }

@@ -5,7 +5,7 @@
 
 .outer-container {
     height: 100vh;
-    background-color: burlywood;
+    background-color: brown;
     display: flex;
     flex-direction: column;
     align-items: center;

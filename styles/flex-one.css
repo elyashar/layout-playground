@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  /* min-height: 100vh; */
+  justify-content: space-between;
+  background-color: brown;
+}
+
+/* The flex property (for flex items) is a shorthand for the default values for:
+
+flex-grow: 0;
+flex-shrink: 1;
+flex-basis: auto;
+
+And flex: 1; is a shorthand for:
+flex-grow : 1;    ➜ The div will grow in same proportion as the window-size       
+flex-shrink : 1;  ➜ The div will shrink in same proportion as the window-size 
+flex-basis : 0;   ➜ The div does not have a starting value as such and will 
+                     take up screen as per the screen size available for
+                     e.g:- if 3 divs are in the wrapper then each div will take 33%.
+*/
+
+p {
+  border: 1px solid black;
+  color: white;
+  padding: 1rem;
+}
+
+.p1 {
+  /* flex: 1; */
+  /* flex: auto; */
+  flex-grow: 1;
+  /* flex-shrink: 1; */
+  flex-basis: auto;
+  background-color: red;
+}
+
+.p2 {
+  /* flex-grow: 1; */
+  /* flex-basis: auto; */
+  background-color: green;
+}
+
+.p3 {
+  /* flex: 1; */
+  background-color: blue;
+}

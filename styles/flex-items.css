@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: brown;
+    height: 100px;
+}
+
+.cont-1 {
+    /* the property below affects ALL the flex items of this container */
+    align-items: start;
+    /* other posibble values of the property above are:
+    - stretch (default)
+    - start
+    - end
+    - center
+    - baseline
+    */
+}
+
+p {
+    border: 1px solid black;
+    color: white;
+    padding: 1rem;
+}
+
+.p1,
+.p4,
+.p7 {
+    background-color: red;
+}
+
+.p2,
+.p5,
+.p8 {
+    background-color: green;
+}
+
+.p3,
+.p6,
+.p9 {
+    background-color: blue;
+}
+
+/* we can also control the alignment of the flex items individualy 
+using the align-self property */
+
+.p4 {
+    align-self: end;
+}
+
+.p5 {
+    align-self: center;
+}
+
+.p6 {
+    align-self: flex-start;
+}
+
+/* Container 3 */
+
+.cont-3 {
+    height: 300px;
+    align-items: center;
+}
+
+.p7 {
+    height: 1rem;
+}
+
+.p8 {
+    height: 3rem;
+}
+
+.p9 {
+    height: 5rem;
+    align-self: baseline;
+}

@@ -7,6 +7,8 @@
     display: flex;
     min-height: 100vh;
     background-color: brown;
+    /* the line brlow is the default behavier */
+    /* align-items: stretch; */
 }
 
 main {

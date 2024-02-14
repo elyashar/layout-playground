@@ -17,17 +17,42 @@ In this repo im gonna be experimenting with flexbox.
 align-items: stretch;
 ```
 
-3.
+### Three related properties
 
-The flex property (for flex items) is a shorthand for the default values for:
+In this section we'll go over the following properties:
 
+- `flex-basis`
+- `flex-shrink`
+- `flex-grow`
+
+All these properties affect the **cross axis**. That means that if the flex direction is **row** (the default) and there's some space between items, these properties control how each item interacts with that **remaining space**.
+
+1. The `flex-basis` property it's used to stretch the items along the **cross axis** to whatever value we pass (a percentage works really good here in order to distribute any available space).
+
+> If we're using `justify-content: space-between;` in the **flex container**, `flex-basis` will take precedence over it.
+
+2. The `flex-shrink` property will determine how much a **flex item** will shrink, when there's no available space. The higher the value we pass, the more the item will stretch.
+
+> By default `flex-shrink` is equal to 1.
+
+3. If we use `flex-grow : 1;` on an item, it will grow to take all the available space (if any) in the row.
+
+> TODO: explain flex-grow better.
+
+## `flex` shorthand property
+
+The `flex` property (for flex items) is a shorthand for the default values for:
+
+```css
 flex-grow: 0;
 flex-shrink: 1;
 flex-basis: auto;
+```
 
-And flex: 1; is a shorthand for:
-flex-grow : 1; ➜ The div will grow in same proportion as the window-size  
-flex-shrink : 1; ➜ The div will shrink in same proportion as the window-size
-flex-basis : 0; ➜ The div does not have a starting value as such and will
-take up screen as per the screen size available for
-e.g:- if 3 divs are in the wrapper then each div will take 33%.
+And `flex: 1;` is a shorthand for:
+
+```css
+flex-grow: 1;
+flex-shrink: 1;
+flex-basis: 0;
+```

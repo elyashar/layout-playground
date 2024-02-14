@@ -70,17 +70,36 @@ using the align-self property */
 .cont-3 {
     height: 300px;
     align-items: center;
+    background-color: burlywood;
+    justify-content: space-between;
 }
 
 .p7 {
-    height: 1rem;
+    flex-basis: 20%;
+    flex-shrink: 5;
 }
 
 .p8 {
-    height: 3rem;
+    flex-basis: 30%;
+    flex-shrink: 5;
 }
 
 .p9 {
-    height: 5rem;
-    align-self: baseline;
+    flex-basis: 50%;
+    flex-shrink: 1;
+}
+
+/* Container 4 */
+.cont-4 {
+    height: 300px;
+    align-items: center;
+    background-color: burlywood;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.pp {
+    background-color: palegreen;
+    color: black;
+    flex-basis: 33%;
 }

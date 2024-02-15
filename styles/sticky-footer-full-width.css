@@ -1,0 +1,32 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: brown;
+}
+
+header {
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+}
+
+main {
+  /* This is what makes the main element stretch full height of the container.*/
+  flex: 1;
+  width: 80%;
+  align-self: center;
+  padding: 1rem;
+  background-color: sandybrown;
+}
+
+footer {
+  background-color: green;
+  color: white;
+  padding: 1rem;
+}

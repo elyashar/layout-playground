@@ -5,20 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../styles/sticky-footer-full-width.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flow+Block&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="container">
-      <header>I'm a header</header>
+      <header>
+        <h2 class="redacted-script-regular">I'm a header</h2>
+      </header>
       <main>
         <ul>
           <li><a href="../index.html">Home</a></li>
           <li><button id="btn-add-filler-text">Add filler text</button></li>
-          <li><button id="btn-remove-filler-text">Reset filler text</button></li>
+          <li>
+            <button id="btn-remove-filler-text">Reset filler text</button>
+          </li>
         </ul>
 
-        <h1>Sticky footer</h1>
-        <p id="filler-text">
+        <h1 class="redacted-script-regular">Sticky footer</h1>
+        <p id="filler-text" class="redacted-script-regular">
           First real-world CSS problems we should be able to solve, is to render
           any element at full height, regardless of its content; sometimes the
           content is not enough, but we want that the background of the element
@@ -26,7 +42,9 @@
         </p>
       </main>
 
-      <footer>This is a footer</footer>
+      <footer class="redacted-script-regular">
+        <h2 class="redacted-script-regular">I'm a footer</h2>
+      </footer>
     </div>
     <script src="../scripts/sticky-footer.js"></script>
   </body>

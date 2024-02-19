@@ -7,32 +7,30 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(160, 159, 159)
-}
-
-.inner-container-flex-item {
-  /* Flex Item */
-  width: 80%;
-  align-self: center;
-  flex: 1;
-  background-color: rgb(226, 221, 221);
+  background-color: rgb(160, 159, 159);
 }
 
 .main-content {
-  /* The role of this box is to display:display:
-       - aside 
-       - main 
-       - aside
-       Horizontally, in a row. 
-    */
-  display: flex;
-  height: 100vh;
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "left main right";
+  background-color: rgb(226, 221, 221);
+  width: 80%;
+  /* margin: 0 auto; */
 }
 
 aside {
-  width: 10%;
   background-color: rgb(158, 204, 219);
   padding: 1rem;
+}
+
+.left-sidebar {
+  grid-area: left;
+}
+
+.right-sidebar {
+  grid-area: right;
 }
 
 header {
@@ -42,9 +40,7 @@ header {
 }
 
 main {
-  /* This is what makes the main element stretch full height of the container.*/
-  flex: 1;
-  width: 80%;
+  grid-area: main;
   padding: 1rem;
   background-color: rgb(247, 189, 115);
   color: rgb(57, 61, 57);

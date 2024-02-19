@@ -7,11 +7,11 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: brown;
+  background-color: rgb(247, 153, 99);
 }
 
 header {
-  background-color: blue;
+  background-color: rgb(7, 42, 94);
   color: white;
   padding: 1rem;
 }
@@ -22,12 +22,12 @@ main {
   width: 80%;
   align-self: center;
   padding: 1rem;
-  background-color: sandybrown;
+  background-color: rgb(252, 189, 189);
   color: rgb(57, 61, 57);
 }
 
 footer {
-  background-color: green;
+  background-color: rgb(7, 94, 7);
   color: white;
   padding: 1rem;
 }

@@ -26,7 +26,6 @@
        Horizontally, in a row. 
     */
   display: flex;
-  height: 100vh;
 }
 
 aside {

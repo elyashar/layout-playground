@@ -16,20 +16,20 @@ div {
     background-color: white;
     /* opacity: 0.5; */
     font-family: Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .a {
     /* grid-row: 1/2;
     grid-column: 1/2; */
-    background-color: grey;
+    background-color: rgb(168, 168, 168);
 
 }
 
 .b {
     /* grid-row: 2/3;
     grid-column: 1/2; */
-    background-color: grey;
+    background-color: rgb(168, 168, 168);
 }
 
 .c {
@@ -51,13 +51,13 @@ div {
     /* grid-row: 3/5;
     grid-column: 2/3; */
     grid-row: span 2;
-    background-color: grey;
+    background-color: rgb(168, 168, 168);
 }
 
 .f {
     /* grid-row: 3/4;
     grid-column: 3/4; */
-    background-color: grey;
+    background-color: rgb(168, 168, 168);
 }
 
 .g {

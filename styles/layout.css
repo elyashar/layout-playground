@@ -3,21 +3,25 @@
   margin: 0;
 }
 
-.outer-container {
-  display: flex;
+.flex-container {
+  display: flex; /* Flex container */
   flex-direction: column;
   min-height: 100vh;
-  background-color: rgb(160, 159, 159);
+  background-color: rgb(168, 219, 215);
 }
 
-.main-content {
-  display: grid;
-  flex: 1;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "left main right";
-  background-color: rgb(226, 221, 221);
+.grid-container {
+  flex: 1; /* Flex Item (full height) */
   width: 80%;
+  /* center using flex properties */
   /* margin: 0 auto; */
+  align-self: center;
+  background-color: rgb(226, 221, 221);
+  /* Grid stuff */
+  display: grid; /* Grid container */
+  grid-template-columns: 1fr 2fr 1fr;
+  /* Define grid areas */
+  grid-template-areas: "ingredients recipe right";
 }
 
 aside {
@@ -26,10 +30,12 @@ aside {
 }
 
 .left-sidebar {
-  grid-area: left;
+  /* Grid areas must match what we defined in the grid container */
+  grid-area: ingredients;
 }
 
 .right-sidebar {
+  /* Grid areas must match what we defined in the grid container */
   grid-area: right;
 }
 
@@ -40,7 +46,8 @@ header {
 }
 
 main {
-  grid-area: main;
+  /* Grid areas must match what we defined in the grid container */
+  grid-area: recipe;
   padding: 1rem;
   background-color: rgb(247, 189, 115);
   color: rgb(57, 61, 57);

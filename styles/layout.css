@@ -70,7 +70,7 @@ ul {
 button {
   background-color: rgb(63, 131, 96);
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem .3rem;
   border: none;
   cursor: pointer;
 }

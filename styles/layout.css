@@ -50,6 +50,14 @@ header {
   justify-content: space-between;
 }
 
+header a:visited {
+  color: rgb(241, 219, 219);
+}
+
+header a:hover {
+  color: rgb(173, 164, 164);
+}
+
 main {
   /* Grid areas must match what we defined in the grid container */
   grid-area: recipe;
@@ -75,10 +83,11 @@ button {
   padding: 0.3rem .3rem;
   border: none;
   cursor: pointer;
+  color: rgb(5, 5, 83);
 }
 
 button i:hover {
-  color: rgb(125, 129, 127);
+  color: rgb(79, 82, 80);
 }
 
 /*

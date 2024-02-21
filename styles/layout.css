@@ -71,11 +71,14 @@ ul {
 }
 
 button {
-  background-color: rgb(221, 150, 148);
-  color: black;
+  background-color: transparent;
   padding: 0.3rem .3rem;
   border: none;
   cursor: pointer;
+}
+
+button i:hover {
+  color: rgb(125, 129, 127);
 }
 
 /*

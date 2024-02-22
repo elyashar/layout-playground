@@ -1,5 +1,13 @@
 /* Based on composition II in Red, Blue and Yellow, by Piet Mondrian (1930) */
 
+li a:visited {
+    color: rgba(11, 54, 102, 0.699);
+}
+
+li a:hover {
+    color: rgb(168, 168, 168);
+}
+
 .wrapper {
     width: 600px;
     height: 600px;

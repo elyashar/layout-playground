@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet"
+        href="../styles/layout-only-flex.css" />
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com" />
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap"
+        rel="stylesheet" />
+  <link rel="stylesheet"
+        href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <div class="outer-wrapper">
+    <header>
+      <h2 class="redacted-script-regular">I'm a header</h2>
+      <a href="../index.html">
+        <i class="fa fa-home fa-2x"></i>
+      </a>
+    </header>
+
+    <div class="inner-wrapper">
+      <aside class="left-sidebar">
+        <ul>
+          <li>
+            <button id="left-sidebar-add-filler-text">
+              <i class="fa fa-plus-square fa-2x"
+                 aria-hidden="true"></i>
+            </button>
+          </li>
+          <li>
+            <button id="left-sidebar-reset-filler-text"><i class="fa fa-minus-square fa-2x"
+                 aria-hidden="true"></i></button>
+          </li>
+        </ul>
+        <p id="left-sidebar-p"
+           class="redacted-script-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque animi
+          ipsum iusto facere molestiae ad possimus itaque nesciunt. Eum
+          molestias recusandae beatae in officiis, numquam blanditiis incidunt
+          officia molestiae fugiat.
+        </p>
+      </aside>
+      <main>
+        <ul>
+          <li>
+            <button id="btn-add-filler-text">
+              <i class="fa fa-plus-square fa-2x"
+                 aria-hidden="true"></i>
+            </button>
+          </li>
+          <li>
+            <button id="btn-remove-filler-text"><i class="fa fa-minus-square fa-2x"
+                 aria-hidden="true"></i></button>
+          </li>
+        </ul>
+
+        <h1 class="redacted-script-regular">Sticky footer</h1>
+        <p id="filler-text"
+           class="redacted-script-regular">
+          First real-world CSS problems we should be able to solve, is to
+          render any element at full height, regardless of its content;
+          sometimes the content is not enough, but we want that the background
+          of the element stretches out the full height of the page.
+        </p>
+      </main>
+
+      <aside class="right-sidebar">
+        <ul>
+          <li>
+            <button id="right-sidebar-add-filler-text"><i class="fa fa-plus-square fa-2x"
+                 aria-hidden="true"></i></button>
+          </li>
+          <li>
+            <button id="right-sidebar-remove-filler-text"><i class="fa fa-minus-square fa-2x"
+                 aria-hidden="true"></i></button>
+          </li>
+        </ul>
+        <p id="right-sidebar-p"
+           class="redacted-script-light">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque animi
+          ipsum iusto facere molestiae ad possimus itaque nesciunt. Eum
+          molestias recusandae beatae in officiis, numquam blanditiis incidunt
+          officia molestiae fugiat.
+        </p>
+      </aside>
+    </div>
+    <!-- grid-container -->
+
+    <footer class="redacted-script-regular">
+      <h2 class="redacted-script-regular">I'm a footer</h2>
+    </footer>
+  </div>
+  <script type="module"
+          src="../scripts/filler-text.js"></script>
+  <script type="module"
+          src="../scripts/layout.js"></script>
+</body>
+
+</html>

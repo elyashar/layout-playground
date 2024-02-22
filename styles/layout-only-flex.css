@@ -3,49 +3,33 @@
   margin: 0;
 }
 
-.flex-container {
+/* Flex container - direction column */
+.outer-wrapper {
   display: flex;
-  /* Flex container */
   flex-direction: column;
   min-height: 100vh;
   background-color: rgb(185, 190, 190);
 }
 
-.grid-container {
+/* Flex container - direction row */
+.inner-wrapper {
   display: flex;
   flex: 1;
-  /* Flex Item (full height) */
   width: 80%;
-  /* center using flex properties */
-  /* margin: 0 auto; */
   align-self: center;
   background-color: rgb(226, 221, 221);
-  /* Grid stuff */
-  /* Grid container */
-  /* grid-template-columns: 1fr 2fr 1fr; */
-  /* Define grid areas */
-  /* grid-template-areas: "ingredients recipe right"; */
 }
-.grid-container > * {
+
+/* All the items are made into flex containers - direction column */
+.inner-wrapper > * {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
-  /* flex: 1; */
+  flex-basis: 100%; /* All items will have same width. */
 }
 
 aside {
   background-color: rgb(158, 204, 219);
   padding: 1rem;
-}
-
-.left-sidebar {
-  /* Grid areas must match what we defined in the grid container */
-  /* grid-area: ingredients; */
-}
-
-.right-sidebar {
-  /* Grid areas must match what we defined in the grid container */
-  /* grid-area: right; */
 }
 
 header {
@@ -86,7 +70,7 @@ ul {
 
 button {
   background-color: transparent;
-  padding: 0.3rem .3rem;
+  padding: 0.3rem 0.3rem;
   border: none;
   cursor: pointer;
   color: rgb(5, 5, 83);

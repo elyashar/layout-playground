@@ -6,7 +6,8 @@
 .container {
     display: flex;
     min-height: 100vh;
-    background-color: brown;
+    /* /background-color: rgb(129, 132, 134); */
+    background-color: rgb(93, 101, 109);
     /* the line brlow is the default behavier */
     /* align-items: stretch; */
 }
@@ -17,5 +18,6 @@ main {
     margin: 0 auto;
     /* TODO: Find another way of centering when using flexbox */
     padding: 1rem;
-    background-color: sandybrown;
+    /* background-color: rgb(143, 79, 123); */
+    background-color: rgb(196, 91, 164);
 }

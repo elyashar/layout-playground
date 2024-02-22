@@ -7,6 +7,7 @@ In this repo im gonna be experimenting with flexbox.
 # Content
 
 - [flexbox notes](./README/flexbox.md)
+- [font-awesome notes](./README/font-awesome.md)
 
 ---
 [:arrow_backward:][back] ║ [:house:][home] ║ [:arrow_forward:][next]

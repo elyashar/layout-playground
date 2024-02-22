@@ -57,4 +57,4 @@ flex-basis: 0;
 <!-- navigation -->
 [home]: ../README.md
 [back]: ../README.md
-[next]: #
+[next]: ./font-awesome.md

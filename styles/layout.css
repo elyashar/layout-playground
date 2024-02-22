@@ -12,25 +12,19 @@
 }
 
 .grid-container {
-  display: flex;
   flex: 1;
   /* Flex Item (full height) */
   width: 80%;
   /* center using flex properties */
   /* margin: 0 auto; */
   align-self: center;
-  background-color: rgb(226, 221, 221);
+  background-color: rgb(228, 14, 14);
   /* Grid stuff */
+  display: grid;
   /* Grid container */
-  /* grid-template-columns: 1fr 2fr 1fr; */
+  grid-template-columns: 1fr 2fr 1fr;
   /* Define grid areas */
-  /* grid-template-areas: "ingredients recipe right"; */
-}
-.grid-container > * {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  /* flex: 1; */
+  grid-template-areas: "ingredients recipe right";
 }
 
 aside {
@@ -40,12 +34,12 @@ aside {
 
 .left-sidebar {
   /* Grid areas must match what we defined in the grid container */
-  /* grid-area: ingredients; */
+  grid-area: ingredients;
 }
 
 .right-sidebar {
   /* Grid areas must match what we defined in the grid container */
-  /* grid-area: right; */
+  grid-area: right;
 }
 
 header {

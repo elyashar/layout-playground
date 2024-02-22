@@ -14,7 +14,8 @@
 /* Flex container - direction row */
 .inner-wrapper {
   display: flex;
-  flex: 1;          /* This is essential to make items stretch full-height */
+  /* flex-direction: row */ /* This is the default value */
+  flex: 1; /* This is essential to make items stretch full-height */
   width: 80%;
   align-self: center;
   background-color: rgb(226, 221, 221);
@@ -22,15 +23,16 @@
 
 /* For the flex: 1; that we set in the parent to work, we must select All the
 items and make them into flex containers - direction column */
-.inner-wrapper > * {
+.inner-wrapper > aside,
+.inner-wrapper > main {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%; /* Just so all items will have same width. */
 }
 
 aside {
   background-color: rgb(158, 204, 219);
   padding: 1rem;
+  width: 20%;
 }
 
 header {
@@ -50,11 +52,10 @@ header a:hover {
 }
 
 main {
-  /* Grid areas must match what we defined in the grid container */
-  grid-area: recipe;
   padding: 1rem;
   background-color: rgb(247, 189, 115);
   color: rgb(57, 61, 57);
+  width: 60%;
 }
 
 footer {

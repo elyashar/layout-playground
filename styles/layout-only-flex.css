@@ -14,17 +14,18 @@
 /* Flex container - direction row */
 .inner-wrapper {
   display: flex;
-  flex: 1;
+  flex: 1;          /* This is essential to make items stretch full-height */
   width: 80%;
   align-self: center;
   background-color: rgb(226, 221, 221);
 }
 
-/* All the items are made into flex containers - direction column */
+/* For the flex: 1; that we set in the parent to work, we must select All the
+items and make them into flex containers - direction column */
 .inner-wrapper > * {
   display: flex;
   flex-direction: column;
-  flex-basis: 100%; /* All items will have same width. */
+  flex-basis: 100%; /* Just so all items will have same width. */
 }
 
 aside {

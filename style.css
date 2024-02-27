@@ -1,0 +1,53 @@
+body {
+    font-family: Gloria Hallelujah;
+    background-color: rgb(196, 193, 193);
+
+}
+
+.gloria-hallelujah-regular {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    height: 100vh;
+}
+
+.list ul {
+    list-style-type: none;
+    padding: 1rem;
+    background-color: rgb(250, 154, 90);
+    box-shadow: 0.5rem 0.5rem 0.7rem rgb(140, 141, 95);
+
+}
+
+.list ul:hover {
+    transform: rotate(-0.2deg);
+}
+
+
+li ion-icon {
+    padding-right: 0.5rem;
+    vertical-align: middle;
+    color: rgb(9, 57, 146);
+}
+
+
+
+.list ul li a {
+    text-decoration: none;
+    color: rgb(9, 57, 146);
+}
+
+.list ul li a:visited {
+    color: rgb(38, 51, 109);
+}
+
+.list ul li a:hover {
+    color: rgb(70, 88, 168);
+}

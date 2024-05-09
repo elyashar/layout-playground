@@ -10,10 +10,9 @@ body {
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    /* min-height: 100vh; */
     background-color: #527d96;
 }
 
@@ -52,8 +51,7 @@ main {
     background-color: #527d96;
     display: grid;
     gap: 1rem;
-    grid-template-row: repeat(2, 1fr);
-    /* grid-auto-flow: row; */
+    grid-template-rows: repeat(2, 1fr);
     height: 29rem;
 }
 

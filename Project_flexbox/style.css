@@ -14,11 +14,11 @@ body {
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #527d96;
+    background-color: #1e5a7c;
 }
 
 .header-wrapper {
-    background: #5c6879;
+    background: #3d4e66;
 }
 
 .main-header {
@@ -35,6 +35,7 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     color: #dbd7d7;
+    padding: 0 1rem;
 }
 
 .header-nav {
@@ -53,11 +54,11 @@ main {
     flex: 1;
     width: 80%;
     margin: 0 auto;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
 }
 
 .footer-wrapper {
-    background: #5c6879;
+    background: #3d4e66;
 }
 
 footer {
@@ -77,11 +78,13 @@ footer {
 .footer-nav a {
     text-decoration: none;
     color: #dbd7d7;
+    padding: 0 1rem;
 }
 
 .copyright {
     color: #dbd7d7;
     font-size: 0.9rem;
+    padding: 0 1rem;
 }
 
 a:hover,
